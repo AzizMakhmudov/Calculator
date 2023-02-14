@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="notch"></div>
+        <div class="notice-box">
+          <div class="left-side">
+            <p data-time-notice class="time-calc"></p>
+          </div>
+          <div class="right-side">
+            <img src="./img/Right Side.png" alt="Icon Notice Box" />
+          </div>
+        </div>
+        <div class="tdnn">
+          <div class="moon"></div>
+        </div>
+        <div class="calc-screen">
+          <input
+            data-result
+            class="result display"
+            type="text"
+            name="Display"
+          />
+        </div>
+        <div class="calc-btn" data-calc-btn>
+          <div class="flexbox">
+            <input class="clear-btn btn-trio" type="button" value="C" />
+            <input class="calc-btn btn-trio" type="button" value="+/-" disabled/>
+            <input class="calc-btn btn-trio" type="button" value="%" disabled/>
+            <input class="calc-btn btn-sign" type="button" value="/" />
+          </div>
+
+          <div class="flexbox">
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="7"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="8"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="9"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-sign"
+              type="button"
+              value="*"
+              data-role="operator"
+            />
+          </div>
+
+          <div class="flexbox">
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="4"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="5"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="6"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-sign"
+              type="button"
+              value="-"
+              data-role="operator"
+            />
+          </div>
+
+          <div class="flexbox">
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="1"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="2"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-nums"
+              type="button"
+              value="3"
+              data-role="number"
+            />
+            <input
+              class="calc-btn btn-sign"
+              type="button"
+              value="+"
+              data-role="number"
+            />
+          </div>
+
+          <div class="flexbox">
+            <input
+              class="calc-btn sign-end"
+              type="button"
+              value="."
+              data-role="operator"
+            />
+            <input
+              class="calc-btn sign-end"
+              data-role="number"
+              type="button"
+              value="0"
+            />
+            <div class="calc-btn sign-end">
+              <img src="./img/👀 Icon.png" alt="Clear" class="img-clear" />
+            </div>
+            <input
+              class="calculate-btn btn-sign"
+              type="button"
+              value="="
+              data-role="operator"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.1.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
